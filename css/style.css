@@ -102,4 +102,13 @@ footer{
 .header-menubar a:hover{
     color: purple;
 }
-
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ead7d7; 
+    color: #100f0f; 
+}
+#redes{
+    margin: 5px;
+}
