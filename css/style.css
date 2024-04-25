@@ -177,9 +177,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #0056b3;
 }
-#responsive-image {
+#responsive-image, .contenido-sec p {
     max-width: 100%;
     height: auto;
 }
-
-
