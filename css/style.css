@@ -48,6 +48,12 @@ main>div{
     float: left;
     width: 60%;
 }
+main>h2{
+    margin: 1.5rem;
+}
+main>p{
+    margin: 1.5rem;
+}
 main>aside{
     /* border: 2px blue solid; */
     min-height: 180px;
@@ -118,6 +124,7 @@ footer{
 .header-menubar a:hover{
     color: purple;
 }
+
 footer {
     display: flex;
     justify-content: center;
