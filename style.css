@@ -1,0 +1,433 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    padding-top: 110px;
+    background-color: #656665;
+}
+
+.header {
+    height: 110px;
+    background-color: rgb(49, 45, 45);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    z-index: 9999;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    /* text-align: center;
+    padding: 10px 0;*/
+
+    margin: 0 auto;
+}
+
+.img-logo {
+    height: 100px;
+    margin-top: 5px;
+    border-radius: 10%;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: 16px;
+    line-height: 110px;
+    margin: 0 15px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link {
+    text-decoration: none;
+    color: rgb(230, 214, 214);
+
+}
+
+.nav-menu-link:hover {
+    color: rgb(201, 87, 157);
+}
+
+.ubicacion {
+    border: 1px solid;
+}
+
+.pedido,
+.ubicacion,
+.btn_alemana {
+    border-radius: 18px;
+    padding: 8px 20px;
+}
+
+.pedido{
+    background-color:#f28281;
+}
+
+.ubicacion:hover {
+    background-color: white;
+    color: black;
+}
+
+.pedido:hover,
+.btn_alemana:hover {
+    background-color: rgb(119, 66, 106);
+    color: white;
+    transition: 0.5s;
+}
+
+.nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    cursor: pointer;
+    /* line-height: 110px; */
+
+    display: none;
+}
+/* --------form-------- */
+
+form {
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f28281;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: #a8d2e2;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #444;
+}
+
+#formulario{
+    text-align: center;
+}
+.tit-form{
+    color:  rgb(230, 214, 214);
+}
+/* Estilos para dispositivos con pantalla grande */
+@media (min-width: 1200px) {
+    form {
+      width: 50%;
+      padding: 20px;
+    }
+  }
+  
+  /* Estilos para dispositivos con pantalla mediana */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    form {
+      width: 70%;
+      padding: 20px;
+    }
+  }
+  
+  /* Estilos para dispositivos con pantalla pequeña */
+  @media (max-width: 767px) {
+    form {
+      width: 90%;
+      padding: 10px;
+    }
+  }
+  
+
+#contacto {
+    text-align: center;
+}
+#cont2{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}   
+/* --------SLIDER-------- */
+.container-slider {
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-slider {
+    margin-top: 2px;
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 0 10px 10px #3e4241, 1px 1px 10px 10px #000;
+
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 300%;
+    height: 500px;
+    margin-left: -100%;
+}
+
+.slider_img {
+    width: 100%;
+}
+
+.slider_btn {
+    top: 90%;
+    position: absolute;
+    color: rgb(231, 225, 238);
+    cursor: pointer;
+    font-size: 30px;
+    right: 50%;
+}
+
+.slider_btn:hover {
+    color: #ccc;
+}
+
+.slider__btn--right {
+    right: 45%;
+}
+
+.slider__btn--left {
+    right: 55%;
+}
+
+/* --------SLIDER --------*/
+
+/* --------INSTAGRAM----- */
+.redes_instagram {
+    height: 200px;
+    margin-top: 12px;
+    color: rgb(231, 225, 238);
+}
+
+.angled-gradient {
+    background: linear-gradient(30deg, #f28281, #ecb27c);
+}
+
+.instagram {
+    text-align: center;
+    padding: 70px;
+    font-size: 30px;
+    font-family: Georgia, Times, serif;
+
+}
+
+.leyenda_instagram {
+    margin-bottom: 20px;
+}
+
+.logo-instagram {
+    height: 30px;
+    width: 30px;
+    margin: 0 auto;
+}
+
+/* --------INSTAGRAN----- */
+
+/* --------ALEMANA----- */
+.alemana {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    background-image: url("./images/alemanagrande-1400x933.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+.picada_alemana {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 330px;
+    color: rgb(215, 206, 224);
+    font-size: 40px;
+    text-shadow:
+        1px 1px 2px black,
+        0 0 1em rgb(81, 40, 87),
+        0 0 0.2em rgb(39, 23, 34);
+}
+
+.btn_alemana {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(231, 225, 238);
+    background-color: #f28281;
+    letter-spacing: 2px;
+}
+
+/* --------ALEMANA----- */
+
+/* -----VARIEDADES ------*/
+.variedades{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 150px;
+    color: rgb(231, 225, 238);
+}
+.variedad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    
+}
+.variedad_texto p{
+    margin-top: 30px;
+    text-align: right;
+    font-family: Montserrat,sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 25px;
+    width: 390px;
+}
+.variedad_titulo{
+    display: flex;
+    font-size: 32px;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    font-family: Georgia, Times, serif;
+}
+.btn_variedad{
+    display: flex;
+    gap: 8px;
+    font-family: Montserrat, sans-serif;
+
+}
+.btn_variedad a{
+    text-decoration: none;   
+}
+
+/* -----VARIEDADES ------*/
+
+
+
+
+footer{
+    background-color: black;
+    height: 100px;
+    color: rgb(231, 225, 238);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    
+} 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-donde{
+    background-color: black;
+    height: 300px;
+    color: rgb(231, 225, 238);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 50px;
+}
+.section-sub{
+    font-size: 20px;
+}
+.donde-map{
+    width: 100%;
+    height: 500px;
+}
+.mbr-map {
+    height: 100%;
+}
+.mbr-map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:768px) {
+    body {
+        padding-top: 100px;
+    }
+
+    .header {
+        height: 100px;
+    }
+
+    .img-logo {
+        width: 90px;
+        height: 80px;
+        margin: 10px 0 10px 60px;
+    }
+
+    .altura {
+        height: 100vh;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        position: fixed;
+        top: 90px;
+        margin: auto;
+        background-color: rgb(49, 45, 45);
+
+        left: 100%;
+        /* transition: left 0.3s; */
+    }
+
+    .nav-menu-item {
+        line-height: 80px;
+    }
+
+    .ubicacion {
+        padding: 8px 29px;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+        transition: left 0.3s;
+    }
+}
