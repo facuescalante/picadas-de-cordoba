@@ -49,9 +49,9 @@ btnLeft.addEventListener("click", function () {
     prev()
 })
 
-// setInterval(() => {
-//     next()
-// }, 4000);
+ setInterval(() => {
+     next()
+ }, 4000);
 
 document.getElementById('myForm').addEventListener('submit', function(event) {
     // Obtengo elementos del formulario
