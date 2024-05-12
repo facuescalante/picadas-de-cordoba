@@ -14,7 +14,8 @@ const btnRight = document.getElementById("slider__btn--right");
 const btnLeft = document.getElementById("slider__btn--left");
 
 function next() {
-    let sliderSectionFirst = document.querySelectorAll(".slider_img")[0];
+    let sliderSection = document.querySelectorAll(".slider_img");
+    let sliderSectionFirst = sliderSection[0];
 
     slider.style.marginLeft = "-200%";
     slider.style.transition = "margin-left 1s";
@@ -23,7 +24,6 @@ function next() {
         slider.style.transition = "none";
         slider.insertAdjacentElement("beforeend", sliderSectionFirst);
         slider.style.marginLeft = "-100%"
-
     }, 1000);
 }
 
@@ -41,6 +41,7 @@ function prev() {
     }, 1000);
 }
 
+
 btnRight.addEventListener("click", function () {
     next()
 })
@@ -52,6 +53,15 @@ btnLeft.addEventListener("click", function () {
  setInterval(() => {
      next()
  }, 4000);
+ 
+ window.onload = function() {
+    let sliderSection = document.querySelectorAll(".slider_img");
+    let slider = document.querySelector("#slider");
+
+    // Ajusta el ancho del contenedor del slider en función del número de slides
+    slider.style.width = (sliderSection.length * 100) + "%";
+}
+
 
 document.getElementById('myForm').addEventListener('submit', function(event) {
     // Obtengo elementos del formulario
