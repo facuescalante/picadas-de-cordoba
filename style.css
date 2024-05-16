@@ -211,7 +211,7 @@ body {
 /* --------form-------- */
 
 form {
-    width: 700px;
+    width: 90%;
     margin: 0 auto;
     padding: 20px;
     background-color: #f28281;
@@ -415,7 +415,7 @@ img {
 
 /* --------ALEMANA----- */
 .alemana {
-    width: 100vw;
+    width: 100%;
     height: 25vh;
     display: flex;
     justify-content: center;
@@ -447,7 +447,39 @@ img {
     background-color: #f28281;
     letter-spacing: 2px;
 }
+/* Estilos para pantallas medianas */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .instagram {
+        font-size: 25px;
+    }
+    .logo-instagram {
+        height: 25px;
+        width: 25px;
+    }
+    .picada_alemana {
+        font-size: 35px;
+    }
+    .btn_alemana {
+        font-size: 14px;
+    }
+}
 
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    .instagram {
+        font-size: 20px;
+    }
+    .logo-instagram {
+        height: 20px;
+        width: 20px;
+    }
+    .picada_alemana {
+        font-size: 30px;
+    }
+    .btn_alemana {
+        font-size: 12px;
+    }
+}
 /* --------ALEMANA----- */
 
 /*---------
@@ -466,6 +498,9 @@ img {
     align-items: center;
     gap: 80px;
     
+}
+.variedad img{
+    border-radius: 10px;
 }
 .variedad_texto p{
     margin-top: 30px;
