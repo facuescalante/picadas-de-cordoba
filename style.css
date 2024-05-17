@@ -24,12 +24,13 @@ body {
     top: 0;
     width: 100%;
     z-index: 9999;
-    
+        
 }
 
 @media (min-width: 768px) {
     .header {
         justify-content: center; /* Centra los elementos en pantallas más grandes */
+        
     }
 }
 @media (max-width:768px) {
@@ -38,6 +39,14 @@ body {
         height: 60px; 
     }
 }
+@media screen and (max-width: 600px) {
+    header .img-logo {
+        position: relative; 
+              
+        
+    }
+}
+
 
 .nav-menu-item:hover .dropdown-menu {
     display: block;
@@ -59,6 +68,16 @@ body {
     height: 100px;
     margin-top: 5px;
     border-radius: 10%;
+    animation: neon 10s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+    from {
+        filter: drop-shadow(0 0 6px #755ddc);
+    }
+    to {
+        filter: drop-shadow(0 0 20px #44e8c4) drop-shadow(0 0 30px #ff4d4d);
+    }
 }
 
 .nav-menu {
@@ -111,6 +130,22 @@ body {
     color: white;
     transition: 0.5s;
 }
+/*-----mediterranea------*/
+
+@media screen and (max-width: 600px) {
+    .variedad {
+        flex-direction: column;
+    }
+    .variedad_titulo {
+        font-size: 1.2em;
+    }
+    .variedad_texto {
+        font-size: 1em;
+    }
+    .btn_variedad {
+        flex-direction: column;
+    }
+}
 
 
 /*------tarjetas-----*/
@@ -130,6 +165,7 @@ body {
     width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
     height: 100%; /* La imagen ocupa todo la altura de la tarjeta */
     object-fit: cover; /* Asegura que la imagen cubra todo el espacio disponible sin distorsionarse */
+    
 }
 
 .card-text {
@@ -167,15 +203,18 @@ body {
     opacity: 0;
     transform: translateY(10px);
     transition: all 0.3s;
+    
 }
 
 .card:hover .container {
     opacity: 1;
     transform: translateY(0);
+    
 }
 .card-container {
     display: flex;
     justify-content: flex-end;
+       
 }
 .card {
     margin-left: 20px;
@@ -225,6 +264,7 @@ input[type="text"], input[type="email"], select {
     margin-bottom: 10px;
     border: 1px solid #ddd;
     outline: none;
+    border-radius: 10px;
 }
 
 input[type="submit"] {
@@ -241,7 +281,7 @@ input[type="submit"]:hover {
 }
 
 #formulario{
-    text-align: center;
+    text-align: center;    
     
 }
 .tit-form{
@@ -292,9 +332,9 @@ input[type="submit"]:hover {
 
 .api-image {
     width: 40%;
-    height: 400px;
+    height: 300px;
     margin: 10px; 
-    border-radius: 15px;  /* Añade bordes redondeados a las imágenes */
+    border-radius: 10px;  /* Añade bordes redondeados a las imágenes */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
     object-fit: cover;  /* Esto recorta la imagen para que llene el contenedor */
     object-position: center;
