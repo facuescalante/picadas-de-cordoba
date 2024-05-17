@@ -451,7 +451,11 @@ img {
     margin: 0 auto;
 }
 
-/* --------INSTAGRAN----- */
+/* --------NUESTRAS----- */
+#nuestras{
+    color: rgb(215, 206, 224);
+    text-align: center;
+}
 
 /* --------ALEMANA----- */
 .alemana {
