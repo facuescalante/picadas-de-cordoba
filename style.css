@@ -346,6 +346,10 @@ input[type="submit"]:hover {
     color:   rgb(230, 214, 214);
     text-align: center;
 }
+#api-images p{
+    color:   rgb(230, 214, 214);
+    text-align: center;
+}
 /* Para pantallas de tamaño medio */
 @media (min-width: 600px) {
     .api-image {

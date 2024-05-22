@@ -87,29 +87,9 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         alert('Todos los campos son obligatorios.');
         event.preventDefault();  // Previene el envío del formulario
     }
-});
-document.getElementById('myForm').addEventListener('submit', function(event) {
-    // validación de formulario aquí
-
-    // Redirige a index.html
-    window.location.href = 'index.html';
-});
-
-
-
-
-document.getElementById('myForm').addEventListener('submit', function(event) {
-    // Obtengo elementos del formulario
-    var fname = document.getElementById('fname');
-    var lname = document.getElementById('lname');
-    var email = document.getElementById('email');
-    var option = document.getElementById('option');
-    var check = document.getElementById('check');
-
-    // Verifico si los campos están vacíos
-    if (!fname.value || !lname.value || !email.value || !option.value || !check.checked) {
-        alert('Todos los campos son obligatorios.');
-        event.preventDefault();  // Previene el envío del formulario
+    else {
+        // Si todos los campos están completos, muestra un mensaje de éxito
+        alert('Formulario enviado con éxito!');
     }
 });
 document.getElementById('myForm').addEventListener('submit', function(event) {
@@ -118,6 +98,10 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     // Redirige a index.html
     window.location.href = 'index.html';
 });
+
+
+
+
 
 
 
