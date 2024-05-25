@@ -461,10 +461,18 @@ img {
 }
 
 .logo-instagram {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     margin: 0 auto;
+    transform: scaleX(-1); 
+    transition: background-color 0.5s; 
 }
+
+.logo-instagram:hover {
+    background-color: rgb(197, 81, 172); /* Cambia el color de fondo al hacer hover */
+    box-shadow: 0 0 10px rgba(178, 172, 203, 0.5); /* Agrega una sombra al hacer hover */
+}
+
 
 /* --------NUESTRAS----- */
 #nuestras{
@@ -656,7 +664,7 @@ img {
     gap: 10px;
     margin-left: auto; /* Alinear a la derecha */
     justify-content: center;
-    transition: transform 0.3s ease; /* Agrega una transición suave */
+     
 }
 #btn_conocelas:hover {
     animation: tilt-n-move-shaking 0.25s infinite;
@@ -668,8 +676,27 @@ img {
     75% { transform: translate(-5px, 5px) rotate(-5deg); }
     100% { transform: translate(0, 0) rotate(0deg); }
 }
-
-
+.btn_variedad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat, sans-serif;
+    background-color: #f28281;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 12px;
+    text-decoration: none;
+    color: rgb(231, 225, 238);
+    padding: 8px 15px;
+    width: 150px;
+    margin-top: 28px;
+}
+.btn_variedad:hover{
+    background-color: rgb(119, 66, 106);
+    color: white;
+    transition: 0.5s;
+}
 
 /* -----PARALLAX VEGETARIANAS--------*/
 
