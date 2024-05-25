@@ -59,7 +59,7 @@ window.onload = function() {
     // Ajusta el ancho del contenedor del slider en función del número de slides
     slider.style.width = (sliderSection.length * 100) + "%";
 
-    // Carga de imágenes aleatorias
+    // api---Carga de imágenes aleatorias
     var imageContainer = document.getElementById('image-container');
 
     for (var i = 0; i < 2; i++) {  
@@ -73,7 +73,7 @@ window.onload = function() {
             });
     }
 }
-
+// form----
 document.getElementById('myForm').addEventListener('submit', function(event) {
     // Obtengo elementos del formulario
     var fname = document.getElementById('fname');
@@ -98,6 +98,15 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     // Redirige a index.html
     window.location.href = 'index.html';
 });
+
+
+let parallax = document.querySelector(".parallax");
+function scrollParallax() {
+    let scrollTop = document.documentElement.scrollTop;
+    parallax.style.transform = 'translateY(' + scrollTop * -0.1 +'px)';
+}
+window.addEventListener('scroll', scrollParallax);
+
 
 
 
