@@ -656,7 +656,19 @@ img {
     gap: 10px;
     margin-left: auto; /* Alinear a la derecha */
     justify-content: center;
+    transition: transform 0.3s ease; /* Agrega una transición suave */
 }
+#btn_conocelas:hover {
+    animation: tilt-n-move-shaking 0.25s infinite;
+}
+@keyframes tilt-n-move-shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0deg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
 
 
 /* -----PARALLAX VEGETARIANAS--------*/
