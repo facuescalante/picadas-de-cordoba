@@ -176,7 +176,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    color: white; 
+    color: rgb(230, 214, 214); 
     background: rgba(0, 0, 0, 0.5); 
     padding: 10px;
     text-align: center; 
@@ -191,7 +191,7 @@ body {
 
 .container {
     padding: 2px 16px;
-    color: #a8d2e2;
+    color: rgb(230, 214, 214);
 }
 .card {
     transition: 0.3s;
@@ -338,28 +338,35 @@ input[type="submit"]:hover {
 }
 
 .api-image {
-    width: 40%;
-    height: 300px;
-    margin: 10px; 
-    border-radius: 10px;  
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-    object-fit: cover;  
-    object-position: center;
+    box-shadow: 0 4px 8px 0 rgba(239, 214, 214, 0.2);
+    padding: 10px;
+    margin: 10px;
+    width: 40%; /* Define el ancho de la tarjeta */
+    height: 400px; /* Define la altura de la tarjeta */
+    border-radius: 15px;
+    position: relative;
+    margin-top: 50px;
+    overflow: hidden;
 }
+
 #api-images{
     background-color: #1b040d;
+    
 }
 #api-images h2{
-    color:   rgb(230, 214, 214);
+    
     text-align: center;
     font-size: 8mm;
     margin: 10px;
     margin-top: 20px;
 }
 #api-images p{
-    color:   rgb(230, 214, 214);
+    
     text-align: center;
     font-size: 5mm;
+}
+#api-text{
+    color: rgb(230, 214, 214)
 }
 /* Para pantallas de tamaño medio */
 @media (min-width: 600px) {
@@ -380,6 +387,7 @@ input[type="submit"]:hover {
 /* --------SLIDER-------- */
 .container-slider {
     margin: 0 auto;
+    
 }
 
 img {
@@ -476,7 +484,7 @@ img {
 
 /* --------NUESTRAS----- */
 #nuestras{
-    color: rgb(215, 206, 224);
+    color: rgb(230, 214, 214);
     text-align: center;
     font-size: 5mm;
         
@@ -642,7 +650,7 @@ img {
     display: grid;
     justify-content: flex-end; /* Cambia a "flex-end" para alinear a la derecha */
     margin-right: 5%; /* Ajusta el margen derecho según tus necesidades */
-    margin-top: 200px;
+    margin-top: 130px;
 }
 
 .parallax_text {
@@ -787,13 +795,15 @@ img {
 footer{
     background-color: #312D2D;
     height: 100px;
-    color: rgb(231, 225, 238);
+    
     display: flex;
     justify-content: center;
     align-content: center;
-    text-align: center;
-    
+    text-align: center;    
 } 
+footer p{
+    color: rgb(230, 214, 214);
+}
 .container {
     display: flex;
     flex-direction: column;
