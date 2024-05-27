@@ -845,8 +845,10 @@ footer {
     right: 20px; 
     bottom: 30px; 
     padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
     background-color: #f28281;
-    color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
