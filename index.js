@@ -92,12 +92,6 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         alert('Formulario enviado con éxito!');
     }
 });
-document.getElementById('myForm').addEventListener('submit', function(event) {
-    // validación de formulario aquí
-
-    // Redirige a index.html
-    window.location.href = 'index.html';
-});
 
 
 let parallax = document.querySelector(".parallax");
