@@ -16,10 +16,9 @@ body {
     width: 90%;
     max-width: 1000px;
     margin: 50px auto 100px auto;
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
+    gap: 80px;
 }
 
 .container .receta {

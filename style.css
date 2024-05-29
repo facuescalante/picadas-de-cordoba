@@ -294,6 +294,9 @@ input[type="submit"]:hover {
     color:  rgb(230, 214, 214);
     font-size: 10mm;
 }
+input[type="file"] {
+    padding: 10px;
+   }
 /* Estilos para dispositivos con pantalla grande */
 @media (min-width: 1200px) {
     form {
