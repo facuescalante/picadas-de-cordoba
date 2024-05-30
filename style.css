@@ -504,26 +504,29 @@ img {
 
 /* --------INSTAGRAM----- */
 .redes_instagram {
-    height: 200px;
-    margin-top: 12px;
+    height: 330px;
+    margin-top: 15px;
     color: rgb(231, 225, 238);
+    
 }
 
 .angled-gradient {
     background: linear-gradient(30deg, #df1864, #ecb27c);
+    background-attachment: fixed;
     
 }
 
 .instagram {
     text-align: center;
-    padding: 70px;
+    padding: 90px;
     font-size: 30px;
     font-family: Georgia, Times, serif;
 
 }
 
 .leyenda_instagram {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    
 }
 
 .logo-instagram {
@@ -551,7 +554,7 @@ img {
 /* --------ALEMANA----- */
 .alemana {
     width: 100%;
-    height: 60vh;
+    height: 34vh;
     display: flex;
     justify-content: center;
     background-image: url("./images/alemanagrande-1400x933.jpg");
@@ -565,7 +568,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 330px;
+    gap: 180px;
     color: rgb(215, 206, 224);
     font-size: 40px;
     text-shadow:
@@ -690,6 +693,7 @@ img {
     position: relative;
     height: 70vh;
     overflow-y: hidden;
+    
 }
 
 .parallax {
@@ -703,28 +707,33 @@ img {
     z-index: -1;
     display: flex;
     
+    
 }
 
 .parallax_container {
     display: grid;
     justify-content: flex-end; /* Cambia a "flex-end" para alinear a la derecha */
-    margin-right: 5%; /* Ajusta el margen derecho según tus necesidades */
+    
     margin-top: 130px;
     background-image: url(./images/vegana-fondo-_1200x0.jpg);
     background-attachment: fixed;
     height: 70vh;
     background-size: cover;
+    width: 100%;
+    
 }
 
 .parallax_text {
     width: 100%; /* Ajusta el ancho al 100% para ocupar todo el espacio */
     height: 40%;
-    margin-top: 80px;
+    margin-top: 130px;
     padding: 80px 20px;
     background: linear-gradient(rgba(41, 41, 43, 0.75), rgba(5, 7, 12, 0.75));
     color: rgb(231, 225, 238);
     font-family: Georgia, Times, serif;
     justify-content: center;
+    transform: translateX(-10%);
+    
 }
 
 .parallax_titulo {
@@ -734,7 +743,7 @@ img {
 
 .btn_variedades {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     margin-left: auto; /* Alinear a la derecha */
     justify-content: center;
      
@@ -774,9 +783,11 @@ img {
 @media screen and (max-width: 768px) {
     .contenedor {
         height: auto; /* Ajusta la altura según el contenido */
+       
     }
     .parallax_text {
-        height: auto; /* Ajusta la altura según el contenido */
+        height: 50%; /* Ajusta la altura según el contenido */
+       
     }
     
 }
