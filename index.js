@@ -101,6 +101,42 @@ function scrollParallax() {
 }
 window.addEventListener('scroll', scrollParallax);
 
+// Agrega un evento de clic para cambiar la clase de la tarjeta, la imagen y el texto
+const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+    card.addEventListener('click', () => {
+        card.classList.toggle('flipped');
+        const image = card.querySelector('img');
+        const text = card.querySelector('.card-text');
+        
+        if (card.classList.contains('flipped')) {
+            image.style.display = 'none'; // Oculta la imagen al voltear la tarjeta
+            text.classList.add('hidden'); // Oculta el texto al voltear la tarjeta
+        } else {
+            image.style.display = 'block'; // Muestra la imagen cuando la tarjeta está en su posición original
+            text.classList.remove('hidden'); // Muestra el texto cuando la tarjeta está en su posición original
+        }
+
+        // Agrega un temporizador para volver automáticamente a la posición original
+        setTimeout(() => {
+            card.classList.remove('flipped');
+            image.style.display = 'block';
+            text.classList.remove('hidden');
+        }, 5000); // Cambia el valor (en milisegundos) según tus preferencias
+
+        // Oculta el cursor después de un tiempo
+        document.body.style.cursor = 'none';
+        setTimeout(() => {
+            document.body.style.cursor = 'default';
+        }, 5000); // Cambia el valor (en milisegundos) según tus preferencias
+    });
+});
+
+
+
+
+
 
 
 

@@ -222,6 +222,51 @@ body {
 .card {
     margin-left: 20px;
 }
+.card.flipped {
+    transform: rotateY(180deg);
+    
+}
+.card-text.hidden {
+    display: none;
+}
+/* Estilos para la parte trasera */
+.back-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none; /* Inicialmente oculto */
+    background-color: transparent; /* Fondo oscuro */
+    text-align: center;
+    padding: 20px;
+    transform: rotateY(180deg); /* Añade rotación para que el contenido esté en la posición correcta */
+    z-index: 1; /* Asegura que los botones estén por encima de la imagen */
+}
+
+.card.flipped .back-content {
+    display: block; /* Muestra el contenido trasero cuando la tarjeta está volteada */
+}
+
+.buy-button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px; /* Ajusta el espaciado interno según tus preferencias */
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 50px;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+}
 
 .nav-toggle {
     color: white;
@@ -234,6 +279,15 @@ body {
 
     display: none;
 }
+.carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+
 @media screen and (max-width: 900px) {
     .card {
         width: 40%; /* Las tarjetas ocupan el 40% del ancho en pantallas medianas y grandes */
@@ -497,14 +551,13 @@ img {
 /* --------ALEMANA----- */
 .alemana {
     width: 100%;
-    height: 25vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     background-image: url("./images/alemanagrande-1400x933.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    overflow: hidden;
+    background-attachment: fixed;
 
 }
 
@@ -635,19 +688,21 @@ img {
 /* Estilos generales */
 .contenedor {
     position: relative;
-    height: 500px;
-    overflow: hidden;
+    height: 70vh;
+    overflow-y: hidden;
 }
 
 .parallax {
     position: absolute;
-    background-image: url(./images/vegana-fondo-_1200x0.jpg);
-    background-size: cover;
-    background-position: right;
+    background-image: url();
+    background-size: 100%;
+    background-position: center;
     opacity: 0.9;
     width: 100%;
     height: 100vh;
     z-index: -1;
+    display: flex;
+    
 }
 
 .parallax_container {
@@ -655,11 +710,17 @@ img {
     justify-content: flex-end; /* Cambia a "flex-end" para alinear a la derecha */
     margin-right: 5%; /* Ajusta el margen derecho según tus necesidades */
     margin-top: 130px;
+    background-image: url(./images/vegana-fondo-_1200x0.jpg);
+    background-attachment: fixed;
+    height: 70vh;
+    background-size: cover;
 }
 
 .parallax_text {
     width: 100%; /* Ajusta el ancho al 100% para ocupar todo el espacio */
-    padding: 50px 20px;
+    height: 40%;
+    margin-top: 80px;
+    padding: 80px 20px;
     background: linear-gradient(rgba(41, 41, 43, 0.75), rgba(5, 7, 12, 0.75));
     color: rgb(231, 225, 238);
     font-family: Georgia, Times, serif;
@@ -709,7 +770,16 @@ img {
     color: white;
     transition: 0.5s;
 }
-
+/* Media queries para pantallas pequeñas y medianas */
+@media screen and (max-width: 768px) {
+    .contenedor {
+        height: auto; /* Ajusta la altura según el contenido */
+    }
+    .parallax_text {
+        height: auto; /* Ajusta la altura según el contenido */
+    }
+    
+}
 /* -----PARALLAX VEGETARIANAS--------*/
 
 /* Estilos para dispositivos con pantalla grande */
