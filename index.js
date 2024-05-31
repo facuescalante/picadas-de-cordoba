@@ -132,6 +132,12 @@ cards.forEach(card => {
         }, 5000); // Cambia el valor (en milisegundos) según tus preferencias
     });
 });
+/*-----alemana------*/
+document.addEventListener('scroll', function() {
+    var scrollPos = window.scrollY;
+    var alemanaSection = document.querySelector('.alemana');
+    alemanaSection.style.backgroundPositionY = -(scrollPos * 0.5) + 'px'; // Ajusta el valor para un efecto más o menos pronunciado
+});
 
 
 
