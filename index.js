@@ -95,11 +95,14 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
 
 
 let parallax = document.querySelector(".parallax");
+
 function scrollParallax() {
     let scrollTop = document.documentElement.scrollTop;
-    parallax.style.transform = 'translateY(' + scrollTop * -0.1 +'px)';
+    parallax.style.transform = 'translateY(' + scrollTop * -0.09 + 'px)';
 }
+
 window.addEventListener('scroll', scrollParallax);
+
 
 // Agrega un evento de clic para cambiar la clase de la tarjeta, la imagen y el texto
 const cards = document.querySelectorAll('.card');

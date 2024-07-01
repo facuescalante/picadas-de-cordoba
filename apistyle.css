@@ -25,19 +25,27 @@ body {
     text-align: center;
 }
 
-.contenedor .receta .titulo {
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.container .receta .poster {
+.container .receta .poster-wrapper {
     width: 100%;
     height: 200px;
     margin-bottom: 10px;
     border-radius: 15px;
+    overflow: hidden;
+}
+
+.container .receta .poster {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
+    display: block;
 }
+
+.container .receta .titulo {
+    font-size: 14px;
+    font-weight: 400;
+}
+
 /* Estilos del botón subir */
 .btn-subir {
     position: fixed;
@@ -57,8 +65,9 @@ body {
 }
 
 .btn-subir:hover {
-    background-color:  rgb(119, 66, 106);
+    background-color: rgb(119, 66, 106);
 }
+
 /* Media Queries para responsividad */
 @media (max-width: 1200px) {
     .container {
@@ -95,35 +104,3 @@ body {
         font-size: 12px;
     }
 }
-/* 
-.paginacion {
-    position: fixed;
-    bottom: 0;
-    background: #343436;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px;
-}
-
-.paginacion button {
-    cursor: pointer;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 50px;
-    width: 200px;
-    background-color: #f28281;
-    color: #fff;
-    border-radius: 100px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    transition: .3s ease all;
-}
-
-.paginacion button:hover {
-    background-color: rgb(119, 66, 106);
-} */
